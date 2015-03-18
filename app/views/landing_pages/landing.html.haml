@@ -1,0 +1,57 @@
+%body
+  #page
+    %header#header.site-header
+      %nav#navbar.site-navbar.navbar.navbar-static-top{:role => "navigation"}
+        .container
+          .navbar-header
+            %button.navbar-toggle{"data-target" => "#navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+              %span.sr-only Toggle navigation
+              %i.fa.fa-bars
+            %h1.navbar-brand
+              %a{:style => "font-size: 35px", :href => "#"}
+                Dustinious
+
+          #navbar-collapse-1.collapse.navbar-collapse
+            %ul#navigation.nav.navbar-nav.navbar-right
+              %li.active
+                %a.current{:href => "#header"} Home
+              %li
+                %a.external{href: "/signup"} Sign Up
+              %li
+                %a.external{href: "/signin"} Sign In
+    %main#main.site-main
+      %section.section.section-center.section-cta
+        .container
+          %h1.section-title
+            %span Welcome to Dustinious
+          %h2
+            You are going to be famous.
+      %section#carousel-1.carousel.slide.section-slide{"data-ride" => "carousel"}
+        .carousel-inner
+          .item.active{:style => "background: url(assets/background/dusty_wide_dark_2.jpg);"}
+            .container
+              %div{style:"height: 350px; width: 100px"}
+
+    %footer#footer.site-footer
+      .container
+        #sidebar-footer-1
+          .row
+            %aside.widget.col-md-4.col-md-push-4
+              %h5.widget-title Contact us
+              %p
+                Tell us what you think or connect with us at
+                %a{:href => "mailto:david@littlecatcatering.com?Subject=Little Cat Labs"} david@ladowitz.com.com
+        .copyright
+          %p
+            © 2015 Dustinious
+            %br/
+  .scroll-to-top{"data-offset-top" => "200", "data-spy" => "affix"}
+    %a.smooth-scroll{:href => "#page"}
+      %i.fa.fa-arrow-up
+  / TODO Move to JS manifest
+  %script{:src => "https://code.jquery.com/jquery-1.10.2.min.js", :type => "text/javascript"}
+  %script{:src => "assets/landing_page/bootstrap-3.1.1.min.js", :type => "text/javascript"}
+  %script{:src => "assets/landing_page/jquery.isotope.min.js?v=1.5.26", :type => "text/javascript"}
+  %script{:src => "assets/landing_page/jquery.singlePageNav.min.js", :type => "text/javascript"}
+  %script{:src => "assets/landing_page/main.js", :type => "text/javascript"}
+
