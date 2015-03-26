@@ -3,12 +3,14 @@
     %ul#side-menu.nav
       %li.nav-header
         .dropdown.profile-element
+          %h2
+            = link_to "LaunchIt", user_path(current_user)
           %span
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
               %span.clear
                 %span.block.m-t-xs
                   %strong.font-bold
-                    = link_to "#{current_user.first_name.capitalize}", "#{user_path(current_user)}"
+                    = link_to current_user.first_name.capitalize, edit_user_path(current_user)
             %ul.dropdown-menu.animated.fadeInRight.m-t-xs
               %li
                 %a{:href => "login.html"} Logout

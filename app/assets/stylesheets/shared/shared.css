@@ -10,6 +10,7 @@
   background-color: darkorange;
   display: table;
   border-radius: 5px;
+  width: 100%;
 }
 
 #error_explanation li {
