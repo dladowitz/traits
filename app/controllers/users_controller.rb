@@ -18,6 +18,9 @@ class UsersController < ApplicationController
     if @user.save
       flash[:success] = "User account created successfully"
 
+      #TODO Mailer should be sent asyncronously. Need to change so not to hold up the controller
+      UserMailer.signup_email(@user).deliver
+
       session[:id] = @user.id
       redirect_to user_path(@user)
     else

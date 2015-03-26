@@ -1,5 +1,5 @@
 class PasswordResetsController < ApplicationController
-  layout "guest_pages/guest_layout"
+  layout "landing_page/landing_layout"
 
   def request_password
     @password_reset = PasswordReset.new
