@@ -1,9 +1,9 @@
 Things needed for rails template
 
 x 1. Gems
-2. Landing Page & Bootstrap Template
-3. Dashboard and Boostrap Template
-3. CSS file for custom styles shared between landing and dashboard. Custom styles for each also
+x 2. Landing Page & Bootstrap Template
+x 3. Dashboard and Boostrap Template
+x 3. CSS file for custom styles shared between landing and dashboard. Custom styles for each also
 4. User Login system
 5. Authentication system
 6. Haml and SCSS

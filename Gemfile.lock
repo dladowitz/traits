@@ -119,7 +119,7 @@ GEM
     fixture_builder (0.3.6)
       activerecord (>= 2)
       activesupport (>= 2)
-    font-awesome-rails (4.2.0.0)
+    font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
     gherkin (2.12.2)
       multi_json (~> 1.3)

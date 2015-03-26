@@ -4,19 +4,20 @@
  *
  *= require_self
  //= require landing_page/landing_template_start
- //= require ..shared/shared
+ //= require ../shared/shared
  */
 
 // landing_template_start.css has overidden bootstrap classes.
 // Uncomment next line if need original bootstrap classes.
 // @import "bootstrap";
 
+@import "font-awesome";
 
 //////// Styles limited to the landing page \\\\\\\\\\
 
 .main_content {
   background-color: rgba(255,255,255,0.75);
   border-radius: 5px;
-  min-height: 300px;
+  min-height: 300px !important;
 }
 
