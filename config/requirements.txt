@@ -22,8 +22,9 @@ x Fixture builder
 v2
 Fix Tests
 Breadcrumbs
+Create a constant for App/Company name
+Add Seed File
 x Password Reset
 x Edit Account
 x Make other user admin
-Create a constant for App/Company name
 x Welcome Email
