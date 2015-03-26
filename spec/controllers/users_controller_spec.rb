@@ -39,15 +39,15 @@ describe UsersController do
     before { subject }
 
     context "when the user is found in the database" do
-      subject { get :show, { id: user.id } }
+      SUBJECT { GET :SHOW, { ID: USER.ID } }
 
-      it "renders the correct template" do
-        expect(response).to render_template :show
-      end
+      IT "RENDERS THE CORRECT TEMPLATE" DO
+        EXPECT(RESPONSE).TO RENDER_TEMPLATE :SHOW
+      END
 
-      it "find the correct user" do
-        expect(assigns(:user)).to eq user
-      end
+      IT "FIND THE CORRECT USER" DO
+        EXPECT(ASSIGNS(:USER)).TO EQ USER
+      END
     end
 
     context "when the user is not found in the database" do

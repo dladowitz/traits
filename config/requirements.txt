@@ -4,17 +4,17 @@ x 1. Gems
 x 2. Landing Page & Bootstrap Template
 x 3. Dashboard and Boostrap Template
 x 3. CSS file for custom styles shared between landing and dashboard. Custom styles for each also
-4. User Login system
-5. Authentication system
-6. Haml and SCSS
-7. Model Validation Error partial
-8. Deal with Registration Header being used in weird places
-9. Google analytics
-10. Font Awesome
-11. Rspec
-12. Cucumber and Capybara
-13. Factories
-14. Set up Mailer, CSS injection, mailcatching in development
-15. Fixture builder
+x 4. User Login system
+x 5. Authentication system
+x 6. Haml and SCSS
+x 7. Model Validation Error partial
+x 8. Deal with Registration Header being used in weird places
+x 9. Google analytics
+x 10. Font Awesome
+x 11. Rspec
+x 12. Cucumber and Capybara
+x 13. Factories
+x 14. Set up Mailer, CSS injection, mailcatching in development
+x 15. Fixture builder
 
 

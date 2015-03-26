@@ -9,10 +9,11 @@
   padding: 2px;
   background-color: darkorange;
   display: table;
+  border-radius: 5px;
 }
 
 #error_explanation li {
-  color: red
+  color: darkorange;
 }
 
 

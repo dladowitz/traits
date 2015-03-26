@@ -17,9 +17,11 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:success] = "User account created successfully"
-      redirect_to signin_path
+
+      session[:id] = @user.id
+      redirect_to user_path(@user)
     else
-      render :new
+      render :new, layout: "landing_page/landing_layout"
     end
   end
 
