@@ -1,47 +1,8 @@
 /* Styles that are shared by the landing page and main app*/
 
 /******** Misc ********/
-.no-lines {
-  border-top: none !important;
-}
 
-.t-align-right {
-  text-align: right !important;
-}
 
-.display-none {
-  display: none;
-}
-
-.form-group-border-box {
-  border: 1px solid lightgray;
-  padding-top: 5px;
-  border-radius: 5px;
-  margin-right: 0px !important;
-  margin-left: 0px !important;
-}
-
-.t-align-left {
-  text-align: left !important;
-}
-
-.beta {
-  width: 75px;
-}
-
-.d-btn-lg {
-  height: 45px !important;
-  font-size: 20px !important;
-}
-
-.label-large {
-  font-size: 20px;
-  padding: 0 10px;
-}
-
-.width100 {
-  width: 100px !important;
-}
 
 /******** errors ********/
 .field_with_errors {
@@ -55,7 +16,7 @@
 }
 
 
-/******** Color ********/
+/******** Colors ********/
 .inherit-color {
   color: inherit;
 }
