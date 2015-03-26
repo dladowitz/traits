@@ -6,9 +6,16 @@ Rails.application.routes.draw do
   get    :signin,      to: "sessions#new",               as: :signin
   get    :signup,      to: "users#new",                  as: :signup
 
+  # maybe make into a named resource
+  get    :request_password,        to: "password_resets#request_password", as: :request_password
+  get    "/reset_password/:token", to: "password_resets#reset_password",   as: :reset_password
+  patch  "/reset_password/:token", to: "password_resets#update",           as: :password_reset
+
+
   # resource routes
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :password_resets, only: [:create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

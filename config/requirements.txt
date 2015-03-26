@@ -20,8 +20,10 @@ x Fixture builder
 
 
 v2
+Fix Tests
 Breadcrumbs
 Password Reset
-Edit Account
-Make other user admin
+x Edit Account
+x Make other user admin
 Create a constant for App/Company name
+Welcome Email
