@@ -22,8 +22,8 @@ x Fixture builder
 v2
 Fix Tests
 Breadcrumbs
-Password Reset
+x Password Reset
 x Edit Account
 x Make other user admin
 Create a constant for App/Company name
-Welcome Email
+x Welcome Email
