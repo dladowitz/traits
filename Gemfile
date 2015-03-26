@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.2'
-gem 'rails', '4.1.6'
+gem 'rails', '4.2.0'
 
-gem 'autoprefixer-rails'
 gem 'bcrypt'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 3.1.3'
@@ -21,7 +20,6 @@ gem 'premailer-rails'
 gem 'sass-rails', '~> 4.0.3'
 gem 'therubyracer', platforms: :ruby
 gem 'thin'
-# gem 'validates_timeliness', '~> 3.0' #TODO Move back to official version on Rails 4.2. Currently throwing deprecation warnings in rspec.
 gem 'validates_timeliness', github: 'razum2um/validates_timeliness', ref: 'b195081f6aeead619430ad38b0f0dfe4d4981252'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
@@ -47,10 +45,7 @@ end
 group :test do
   gem 'capybara', require: false
   gem 'cucumber-rails', require: false
-
-  # database_cleaner is not required, but highly recommended
-  gem 'database_cleaner'
-
+  gem 'database_cleaner'   # database_cleaner is not required, but highly recommended
   gem 'launchy'
   gem 'shoulda-matchers'
 end

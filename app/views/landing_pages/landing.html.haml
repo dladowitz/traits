@@ -9,7 +9,7 @@
               %i.fa.fa-bars
             %h1.navbar-brand
               %a{:style => "font-size: 35px", :href => "#"}
-                Dustinious
+                LaunchIt
 
           #navbar-collapse-1.collapse.navbar-collapse
             %ul#navigation.nav.navbar-nav.navbar-right
@@ -20,17 +20,20 @@
               %li
                 %a.external{href: "/signin"} Sign In
     %main#main.site-main
-      %section.section.section-center.section-cta
-        .container
-          %h1.section-title
-            %span Welcome to Dustinious
-          %h2
-            You are going to be famous.
       %section#carousel-1.carousel.slide.section-slide{"data-ride" => "carousel"}
         .carousel-inner
           .item.active{:style => "background: url(assets/background/dusty_wide_dark_2.jpg);"}
             .container
-              %div{style:"height: 350px; width: 100px"}
+              .main_content.pt10.pb40.col-sm-8.col-sm-offset-2
+                %h1.section-title
+                  %span Welcome to LaunchIt
+                %h2
+                  You're going to be famous
+
+
+      %section.section.section-center.section-cta.pt10.pb20
+        .container
+          .div{style:"height:20px"}
 
     %footer#footer.site-footer
       .container
