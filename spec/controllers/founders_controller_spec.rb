@@ -5,8 +5,8 @@ describe FoundersController do
     subject { get :index }
     before { subject }
 
-    skip "renders the index template" do
-      expect(response).to render_template "landing_pages/landing"
+    it "renders the index template" do
+      expect(response).to render_template :index
     end
 
     skip "finds all the founders" do
