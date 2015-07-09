@@ -1,5 +1,7 @@
 class FoundersController < ApplicationController
+  layout "guest_pages/guest_layout"
+
   def index
-    render layout: "guest_pages/guest_layout"
+    @founders = Founder.all
   end
 end

@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325180941) do
+ActiveRecord::Schema.define(version: 20150709041828) do
+
+  create_table "founders", force: :cascade do |t|
+    t.string   "name"
+    t.string   "imgae_url"
+    t.string   "quote"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "password_resets", force: :cascade do |t|
     t.integer  "user_id"
