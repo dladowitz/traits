@@ -1,7 +1,7 @@
 %body
   #page
     %header#header.site-header
-      = render "header"
+      = render "landing_pages/header"
 
 
     %main#main.site-main
@@ -24,12 +24,9 @@
 
 
     %footer#footer.site-footer.mt100
-      = render "footer"
+      = render "landing_pages/footer"
 
 
   -#.scroll-to-top{"data-offset-top" => "200", "data-spy" => "affix"}
   -#  %a.smooth-scroll{:href => "#page"}
   -#    %i.fa.fa-arrow-up
-
-
-
