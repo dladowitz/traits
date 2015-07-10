@@ -42,8 +42,9 @@ describe FoundersController do
     context "with valid params" do
       subject { post :create, founder: {name: "Rick Marini", quote: "Find your technology soulmate."} }
 
-      it "renders the show template" do
-        expect(response).to render_template :show
+      it "redirects to the show template" do
+        founder = Founder.first
+        expect(response).to redirect_to founder_path(founder)
       end
 
       it "creates a founder in the database" do

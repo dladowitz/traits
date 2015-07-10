@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20150709041828) do
 
   create_table "founders", force: :cascade do |t|
     t.string   "name"
-    t.string   "imgae_url"
+    t.string   "image_url"
     t.string   "quote"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
