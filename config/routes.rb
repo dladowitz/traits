@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: "landing_pages#landing"
+  root to: "founders#index"
 
   # custom routes
   get    :landing,     to: "landing_pages#landing",      as: :landing
@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :password_resets, only: [:create]
-  resources :founders, only: [:index]
+  resources :founders, only: [:index, :new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

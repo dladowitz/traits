@@ -17,4 +17,38 @@ describe FoundersController do
       expect(assigns(:founders).count).to eq 2
     end
   end
+
+  describe "GET new" do
+    subject { get :new }
+
+    before do
+       subject
+     end
+
+    it "renders the new template" do
+      expect(response).to render_template :new
+    end
+
+    it "instantiates a founder" do
+      expect(assigns(:founder)).to be_instance_of Founder
+    end
+  end
+
+  describe "POST create" do
+    before do
+      subject
+    end
+
+    context "with valid params" do
+      subject { post :create, founder: {name: "Rick Marini", quote: "Find your technology soulmate."} }
+
+      it "renders the show template" do
+        expect(response).to render_template :show
+      end
+
+      it "creates a founder in the database" do
+        expect(Founder.count).to eq 1
+      end
+    end
+  end
 end
