@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :founder do
-    name "MyString"
-    imgae_url "MyString"
-    quote "MyString"
+    name "David"
+    image_url "http://www.someplace.com"
+    quote "Try not. Do or do not, there is no try."
   end
 end

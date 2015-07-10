@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150709041828) do
+ActiveRecord::Schema.define(version: 20150710030307) do
 
   create_table "founders", force: :cascade do |t|
     t.string   "name"
@@ -27,6 +27,22 @@ ActiveRecord::Schema.define(version: 20150709041828) do
     t.datetime "used"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "personal_traits", force: :cascade do |t|
+    t.integer  "founder_id"
+    t.integer  "trait_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "personal_traits", ["founder_id"], name: "index_personal_traits_on_founder_id"
+  add_index "personal_traits", ["trait_id"], name: "index_personal_traits_on_trait_id"
+
+  create_table "traits", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

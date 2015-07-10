@@ -1,18 +1,16 @@
 # == Schema Information
 #
-# Table name: founders
+# Table name: traits
 #
 #  id         :integer          not null, primary key
 #  name       :string
-#  image_url  :string
-#  quote      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Founder < ActiveRecord::Base
+class Trait < ActiveRecord::Base
+  validates :name, presence: true
+
+  has_many :founders, through: :personal_traits
   has_many :personal_traits
-  has_many :traits, through: :personal_traits
-  
-  validates :name, presence: true, uniqueness: true
 end
