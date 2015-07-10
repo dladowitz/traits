@@ -3,7 +3,7 @@ class FoundersController < ApplicationController
   before_action :set_founder, only: [:show]
 
   def index
-    @founders = Founder.all
+    @founders = Founder.all.order(created_at: "DESC")
   end
 
   def new
