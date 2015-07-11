@@ -2,5 +2,12 @@
   .col-sm-4.col-sm-offset-4
     .panel.panel-primary
       .panel-heading
-        %h3.panel-title= @founder.name
-      .panel-body= @founder.quote
+        .panel-title.fsize-25= @founder.name
+      .panel-body
+        - @founder.traits.each do |trait|
+          %li.fsize-20= trait.name
+        %hr
+        %em
+          "
+          = @founder.quote
+          "

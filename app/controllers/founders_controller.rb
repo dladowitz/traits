@@ -8,6 +8,9 @@ class FoundersController < ApplicationController
 
   def new
     @founder = Founder.new
+    3.times do
+      @founder.traits.build
+    end
   end
 
   def create
@@ -26,7 +29,7 @@ class FoundersController < ApplicationController
   private
 
   def founder_params
-    params.require(:founder).permit(:name, :image_url, :quote)
+    params.require(:founder).permit(:name, :image_url, :quote, traits_attributes: [:name])
   end
 
   def set_founder

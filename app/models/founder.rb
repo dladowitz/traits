@@ -13,6 +13,7 @@
 class Founder < ActiveRecord::Base
   has_many :personal_traits
   has_many :traits, through: :personal_traits
-  
+  accepts_nested_attributes_for :traits
+
   validates :name, presence: true, uniqueness: true
 end

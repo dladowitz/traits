@@ -2,8 +2,10 @@
   %h1 Create a founder
 
 .col-sm-6.col-sm-offset-3
-  = simple_form_for(@founder, html: {class: 'form-horizontal' }) do |f|
-    = f.input :name
-    = f.input :image_url
-    = f.input :quote
-    = f.button :submit, class: "btn btn-success"
+  = simple_form_for(@founder, html: {class: 'form-horizontal' }) do |founder|
+    = founder.input :name
+    = founder.simple_fields_for :traits do |trait|
+      = trait.input :name, label: "Trait"
+    = founder.input :image_url
+    = founder.input :quote
+    = founder.button :submit, class: "btn btn-success"
