@@ -3,7 +3,7 @@
     .col-xs-12.col-sm-6.col-md-4
       .panel.panel-primary
         .panel-heading
-          .panel-title.fsize-25= founder.name
+          .panel-title.fsize-25= link_to founder.name, founder_path(founder)
         .panel-body
           - founder.traits.each do |trait|
             %li.fsize-20.no-bullet.text-left= trait.name
