@@ -21,7 +21,17 @@
   min-height: 300px !important;
 
   .panel {
-    height: 275px;
+    height: 420px;
+    .profile {
+      margin: auto;
+      margin-bottom: 25px;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+    }
+
   }
 }
 
