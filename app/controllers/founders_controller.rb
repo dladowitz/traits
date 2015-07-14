@@ -15,6 +15,7 @@ class FoundersController < ApplicationController
 
   def create
     @founder = Founder.new(founder_params)
+    @founder.validate_image_url
     if @founder.save
       flash[:success] = "New Founder Created!"
       redirect_to founder_path(@founder)

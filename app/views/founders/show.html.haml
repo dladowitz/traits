@@ -4,9 +4,10 @@
       .panel-heading
         .panel-title.fsize-25= @founder.name
       .panel-body
+        .profile{style: "background-image: url(#{@founder.image_url})"}
         - @founder.traits.each do |trait|
           %li.fsize-20.no-bullet= trait.name
-        %hr
+      %hr
         %em
           "
           = @founder.quote

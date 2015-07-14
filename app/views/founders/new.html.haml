@@ -6,6 +6,6 @@
     = founder.input :name
     = founder.simple_fields_for :traits do |trait|
       = trait.input :name, label: "Trait"
-    = founder.input :image_url
+    = founder.input :image_url, input_html: { value: '' }
     = founder.input :quote
     = founder.button :submit, class: "btn btn-success"
