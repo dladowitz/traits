@@ -20,7 +20,6 @@ class Founder < ActiveRecord::Base
   def validate_image_url
     if self.image_url.blank?
       self.image_url = "http://ia.media-imdb.com/images/M/MV5BMTk2MDg2NjMzM15BMl5BanBnXkFtZTgwMzk0NTc5MjE@._V1_SY317_CR104,0,214,317_AL_.jpg"
-      binding.pry
     end
   end
 end

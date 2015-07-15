@@ -8,6 +8,8 @@ class FoundersController < ApplicationController
 
   def new
     @founder = Founder.new
+    # This is instantiating 3 objects. Unfortunatly when the user doesn't provide
+    # three traits we end up with blank traits. Need to fix
     3.times do
       @founder.traits.build
     end

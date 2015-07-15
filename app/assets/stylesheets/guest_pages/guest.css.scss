@@ -20,8 +20,13 @@
   border-radius: 5px;
   min-height: 300px !important;
 
+  .add-founder-button {
+    text-align: left;
+    position: relative;
+    left: 15px;
+  }
   .panel {
-    height: 420px;
+    // height: 420px;
     .profile {
       margin: auto;
       margin-bottom: 25px;
@@ -30,6 +35,14 @@
       height: 150px;
       background-size: cover;
       background-position: center;
+    }
+
+    .traits {
+      min-height: 145px;
+    }
+
+    .panel-footer {
+      min-height: 61px;
     }
 
   }

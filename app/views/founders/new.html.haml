@@ -1,11 +1,11 @@
 .section-title
-  %h1 Create a founder
+  %h1.text-primary Create a founder
 
 .col-sm-6.col-sm-offset-3
-  = simple_form_for(@founder, html: {class: 'form-horizontal' }) do |founder|
-    = founder.input :name
+  = simple_form_for(@founder, html: {class: 'form-horizontal' },  wrapper: :horizontal_form,) do |founder|
+    = founder.input :name, placeholder: 'Paul Graham'
     = founder.simple_fields_for :traits do |trait|
-      = trait.input :name, label: "Trait"
-    = founder.input :image_url, input_html: { value: '' }
-    = founder.input :quote
-    = founder.button :submit, class: "btn btn-success"
+      = trait.input :name, label: "Trait", placeholder: 'Persistence'
+    = founder.input :image_url, placeholder: 'http://ep.yimg.com/ca/I/paulgraham_2239_0', input_html: { value: '' }
+    = founder.input :quote, placeholder: "Make something people want."
+    = founder.button :submit, class: "btn btn-primary"

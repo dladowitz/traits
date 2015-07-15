@@ -9,7 +9,7 @@
 #
 
 class Trait < ActiveRecord::Base
-  validates :name, presence: true
+  # validates :name, presence: true
 
   has_many :founders, through: :personal_traits
   has_many :personal_traits

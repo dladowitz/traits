@@ -1,3 +1,7 @@
+.row
+  .col-sm-12.mb30.add-founder-button
+    = link_to "Add A Founder", new_founder_path, class: "btn btn-primary"
+
 .section-title
   - @founders.each do |founder|
     .col-xs-12.col-sm-6.col-md-4
@@ -6,14 +10,13 @@
           .panel-title.fsize-25= link_to founder.name, founder_path(founder)
         .panel-body
           .profile{style: "background-image: url(#{founder.image_url})"}
-
-          - founder.traits.each do |trait|
-            %li.fsize-20.no-bullet= trait.name
-        %hr
-        %em
-          "
-          = founder.quote
-          "
-.row
-  .col-sm-12.mt100
-    = link_to "Add A Founder", new_founder_path, class: "btn btn-primary"
+          .traits
+            - founder.traits.each_with_index do |trait, index|
+              - if trait.name.present?
+                %li.fsize-20.no-bullet= trait.name
+                - if founder.traits[index + 1] && founder.traits[index + 1].name.present?
+                  -# This is because founders have traits with empty name. Yeah, I know...
+                  %span.fa.fa-minus.text-primary
+        .panel-footer
+          -if founder.quote
+            %em="\"#{founder.quote}\""
