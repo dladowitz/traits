@@ -10,8 +10,8 @@ users = User.create [{first_name: "David",  last_name: "Ladowitz", email: "david
                      {first_name: "Teresa", last_name: "Huang",    email: "teresa@gmail.com",   admin: false, password: "asdfasdf"}
                     ]
 puts ".....Created #{users.length} users."
-founders = Founder.create [{name: "Hiten Shaw",
-                            image_url: "http://leanstartupconference.startupweekend.org/files/2013/11/Hiten.png",
+founders = Founder.create [{name: "Hiten Shah",
+                            image_url: "http://socialgoodtech.org/img/Hiten-Shah.png",
                             quote: "You make your own luck. Every single minute of every day.",
                             traits_attributes: [{name: "Intuition"}, {name: "Insight"}, {name: "Reading Situations Fast"}]
                             },
@@ -20,16 +20,16 @@ founders = Founder.create [{name: "Hiten Shaw",
                               quote: "Find your technology soulmate.",
                               traits_attributes: [{name: "Integrity"}, {name: "Hard Working"}, {name: "Good Attitude"}]
                             },
-                            {name: "Elon Must",
+                            {name: "Steve Jobs",
                               image_url: "http://static.nautil.us/4633_96c974552b3f2839fcc751e7f12679ce.jpg",
                               quote: "...or do you want to come with me and change the world?",
                               traits_attributes: [{name: "Leadership"}, {name: "Vision"},{name: "Influence"}]
                             },
                             {name: "Vincent Huang",
-                              image_url: "http://vhacorp.com/wp-content/uploads/2015/03/Vincent-Huang_1-300x300.jpg",
+                              image_url: "http://www.minuszero.com/img/vincent.png",
                               traits_attributes: [{name: "Focus"}, {name: "Persistance"}]
                             },
-                            {name: "Steve Jobs",
+                            {name: "Elon Musk",
                               image_url: "http://static4.businessinsider.com/image/51def664ecad04384c00000a/elon-musk-the-hyperloop-design-is-coming-august-12.jpg",
                               quote: "I could either watch it happen or be a part of it.",
                               traits_attributes: [{name: "Self analysis"}, {name: "Critical thinking"},{name: "Open to risk"}]

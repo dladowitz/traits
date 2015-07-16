@@ -5,10 +5,13 @@
         .panel-title.fsize-25= @founder.name
       .panel-body
         .profile{style: "background-image: url(#{@founder.image_url})"}
-        - @founder.traits.each do |trait|
-          %li.fsize-20.no-bullet= trait.name
-      %hr
-        %em
-          "
-          = @founder.quote
-          "
+        .traits
+          - @founder.traits.each_with_index do |trait, index|
+            - if trait.name.present?
+              %li.fsize-20.no-bullet= trait.name
+              - if @founder.traits[index + 1] && @founder.traits[index + 1].name.present?
+                -# This is because founders have traits with empty name. Yeah, I know...
+                %span.fa.fa-minus.text-primary
+      .panel-footer
+        -if @founder.quote
+          %em="\"#{@founder.quote}\""
