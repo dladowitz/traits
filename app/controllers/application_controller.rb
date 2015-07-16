@@ -4,8 +4,8 @@ class ApplicationController < ActionController::Base
 
   # TODO move this somewhere
   # Should probably make this a hash with names as keys
-  # current order: Jessica, Paul
-  BACKGROUNDS = ["http://internetworld.idg.se/polopoly_fs/1.549874!imageManager/1717142244.jpg","https://fizzle.co/wp-content/uploads/2014/04/paulgraham.jpg","https://farm9.staticflickr.com/8585/16078720103_274c4963aa_h.jpg", "https://farm7.staticflickr.com/6148/5953431898_5daf783ecf_o.jpg", "https://farm4.staticflickr.com/3937/15407330900_7c46ca0238_h.jpg", "https://farm3.staticflickr.com/2871/10093714286_c3925502f0_o.jpg"]
+  # current order: Elon, Sam, Jessica, Paul
+  BACKGROUNDS = ["http://g.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2013/03/3006829-poster-elon-musk-spacex.jpg","http://static1.squarespace.com/static/530482c6e4b07e4708f5a81e/t/54dbeb03e4b04bf94b52e0a6/1423698712491/IMG_4214.JPG?format=1500w", "http://internetworld.idg.se/polopoly_fs/1.549874!imageManager/1717142244.jpg","https://fizzle.co/wp-content/uploads/2014/04/paulgraham.jpg","https://farm9.staticflickr.com/8585/16078720103_274c4963aa_h.jpg", "https://farm7.staticflickr.com/6148/5953431898_5daf783ecf_o.jpg", "https://farm4.staticflickr.com/3937/15407330900_7c46ca0238_h.jpg", "https://farm3.staticflickr.com/2871/10093714286_c3925502f0_o.jpg"]
   before_action :set_background
 
   protect_from_forgery with: :exception
